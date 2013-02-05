@@ -48,6 +48,9 @@ class History(object):
 
         if location:
             if self.has_changed(location):
+                #Push the current location if it hasn't been added already, so when going back after using goto it goes to the correct location
+                if self._back and self._last_movement is not self._back[-1]:
+                    self.push(self._last_movement)                
                 self.push(location)
             self.mark_location(location)
 
