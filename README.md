@@ -1,7 +1,7 @@
-SublimeNavigationHistory
+Sublime Navigation History
 ========================
 
-SublimeText Navigation history plugin, jump forward and back around your code. 
+A Sublime Text plugin to jump forward and back around your code. Works with SublimeText 3 and is especially useful with it's new goto functionality. 
 
 This was not created by me, it was created by Martin Aspeli (https://github.com/optilude) and came from this forum thread: http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2738
 
