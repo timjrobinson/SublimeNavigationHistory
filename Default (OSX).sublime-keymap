@@ -1,0 +1,4 @@
+[
+  { "keys": ["super+ctrl+alt+left"], "command": "navigation_history_back"},
+  { "keys": ["super+ctrl+alt+right"], "command": "navigation_history_forward"}
+]
