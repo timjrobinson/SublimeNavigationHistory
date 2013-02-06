@@ -162,7 +162,7 @@ class NavigationHistoryBack(sublime_plugin.TextCommand):
         location = history.back()
         if location:
             window = sublime.active_window()
-            window.open_file("%s:%d:%d" % (location.path, location.line, location.col), sublime.ENCODED_POSITION)
+            window.open_file("{0}:{1}:{2}".format(location.path, location.line, location.col), sublime.ENCODED_POSITION)
 
 class NavigationHistoryForward(sublime_plugin.TextCommand):
     """Go forward in history
@@ -176,4 +176,4 @@ class NavigationHistoryForward(sublime_plugin.TextCommand):
         location = history.forward()
         if location:
             window = sublime.active_window()
-            window.open_file("%s:%d:%d" % (location.path, location.line, location.col), sublime.ENCODED_POSITION)
+            window.open_file("{0}:{1}:{2}".format(location.path, location.line, location.col), sublime.ENCODED_POSITION)
