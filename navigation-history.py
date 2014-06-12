@@ -15,7 +15,7 @@ class Location(object):
         self.col = col
     
     def __eq__(self, other):
-        return self.path == other.path and self.line == other.line
+        return other is not None and self.path == other.path and self.line == other.line
     
     def __ne__(self, other):
         return not self.__eq__(other)
@@ -71,6 +71,9 @@ class History(object):
         """Push the given location to the back history. Clear the forward
         history.
         """
+
+        if location == self._current:
+            return
 
         if self._current is not None:
             self._back.append(self._current.copy())
