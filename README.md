@@ -1,7 +1,7 @@
 Sublime Navigation History
 ========================
 
-A Sublime Text plugin to jump forward and back around your code.
+A Sublime Text plugin to jump forward and back around your code. This tracks your cursor position over time and allows you to navigate to where it was previously. So if you are jumping into function definitions or other files you can easily jump back to where you were before. 
 
 ### Installation ###
 
@@ -33,6 +33,8 @@ This plugin is no longer needed for ST3, as of build 3019 Navigation History has
 ### Issues ###
 
 This plugin does not track small navigation changes such as moving one line or character, this is so it's easier to go back to the last big block of code you were working on and moving one line or character backwards via a hotkey is not something most users want to do. 
+
+This does not track your scroll position, only where your cusor was placed.
 
 
 ### Credits ###
